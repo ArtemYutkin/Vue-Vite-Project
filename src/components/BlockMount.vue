@@ -10,11 +10,20 @@ const Plus = () => {
 </script>
 
 <template>
-    <button @click="Plus()">
-        Count:
-        <span>{{ counter.count }}</span>
-    </button>
-    <button @click="counter.count = 100">
-        reset
-    </button>
+    <div class="BlockMount">
+        <button @click="Plus()">
+            Count:
+            <span>{{ counter.count }}</span>
+        </button>
+        <button @click="counter.count = 100">
+            reset
+        </button>
+    </div>
 </template>
+
+<style scoped>
+.BlockMount {
+    height: 100px;
+    width: 300px;
+}
+</style>
